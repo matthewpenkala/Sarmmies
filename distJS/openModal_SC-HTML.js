@@ -2,6 +2,7 @@ var SCobserver = new MutationObserver(function(mutations) {
     const navBarGlobal_WF = $("div[role='banner']").add(".nav-bar").filter(".nav-bar[id^='SRMS_NAV']");
     const navBarProduct_WF = $("body").contents("*").addBack().add("html").find("#SRMS_NAV_RELATIVE").first();
     mutations.forEach(function(mutation) {
+		setTimeout(() => { try { console.clear() } catch (e) {} }, 3334);
         if ($(mutation.target).hasClass("snipcart-sidecart--opened")) {
             if (!$(mutation.target).hasClass("SCnoOverflow")) {
                 var svgSC_filterDarkBG = $("filter#SC-filterDarkBG").parent("*").addBack().find("*").addBack().add("filter#SC-filterDarkBG");
