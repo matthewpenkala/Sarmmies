@@ -3,7 +3,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     for (;;) {
         if ($(".snipcart-item-description").length) {
             $(".snipcart-item-description").each(function() {
-                var events = $(this).text().replace(/(?<=\]),/gi, "").replace(/\[(\u00a7|\u00a7)2\s-\sT\.O\.U\.\]/gi, "").replace(/\s\s+/g, " ").replace(/\s\.{1}/g, ".").replace(/(\s,)/gi, ",");
+                var events = $(this).text().replace(/(?<=\]),/gi, "").replace(/\[(\u00a7|§)2\s-\sT\.O\.U\.\]/gi, "").replace(/\s\s+/g, " ").replace(/\s\.{1}/g, ".").replace(/(\s,)/gi, ",");
                 if (149 < events.length) {
                     events = (events = events.substring(0, 148).replace(/[,]$/g, "").replace(/(^\s+)|(\s+$)/gi, "") + "...").replace(/,\.{1}/g, ", .").replace(/(\s\.\.\.+?)|(\s*\.{3,4})/g, "...").replace(/(^\s+)|(\s+$)/gi, "");
                 }
