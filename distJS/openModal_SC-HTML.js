@@ -4,7 +4,7 @@ var SCobserver = new MutationObserver(function(mutations) {
     setTimeout(() => { try {console.clear()} catch (e) {} }, 6667);
     mutations.forEach(function(mutation) {
         setTimeout(() => {try {console.clear()} catch (e) {}}, 3334);
-        if ($(mutation.target).hasClass("snipcart-sidecart--opened") || $(mutation.target).hasClass("snipcart-cart--opened")) {
+        if ($(mutation.target).hasClass("snipcart-sidecart--opened")) {
             if (!$(mutation.target).hasClass("SCnoOverflow")) {
                 var svgSC_filterDarkBG = $("filter#SC-filterDarkBG").parent("*").addBack().find("*").addBack().add("filter#SC-filterDarkBG");
                 $(mutation.target).addClass("SCnoOverflow");
