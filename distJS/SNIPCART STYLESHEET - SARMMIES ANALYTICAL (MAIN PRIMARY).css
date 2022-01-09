@@ -189,6 +189,7 @@ div#SRMS_NAV_RELATIVE.SC-newAddedClass {
 #snipcart div[class|=snipcart]>.snipcart-cart-header:not(div){position:-webkit-sticky;position:sticky;flex-flow:row;display:flex!important;flex-direction:row;flex-wrap:nowrap;align-content:center;align-items:center;white-space:nowrap!important;overflow:visible;width:79.1%!important;width:calc(((((80% - 20px) + 80%))/ (2)) + 2.736px)!important}
 div[class|=snipcart]>[class*=cart-header]>button:not(div)[class*=close]:not(span,svg){outline:none!important;display:flex!important;flex-wrap:nowrap!important;overflow-clip-margin:18px;block-size:24px;writing-mode:horizontal-tb;flex:1!important;min-inline-size:max-content!important;white-space:nowrap!important}
 div[class|=snipcart]>[class*=cart-header] div:not(button):not(.snipcart-cart-header__options){display:flex!important;flex:2!important;border-collapse:collapse!important;border-spacing:0!important;box-sizing:border-box!important;flex-wrap:nowrap!important;justify-content:center!important;flex-basis:fit-content!important}
+div[class|=snipcart] header.snipcart-cart-header.snipcart-checkout__header.snipcart-layout__header--fixed>button.snipcart-cart-header__close-button.snipcart-modal__close{display:contents!important;block-size:18px!important;flex:auto!important}
 *[class*="snipcart-cart"] > button[class|=snipcart]:not(span, svg)[class*="close"] > span[class|=snipcart]:not(button)[class*="close-title"]:not(svg) {
 	color: #372D3F;
 	font-weight: 400 !important;
