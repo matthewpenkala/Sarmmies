@@ -25,6 +25,7 @@ $("#snipcart").find("*").addBack().add("a.cart-button[href]").not("head").add(".
     $(SCshippingRatesListItem_COL).filter(function() {
         return parseFloat($(this).data("priceVal")) > "49.01";
     }).not(SCshippingRatesListItem_NDAS).closest("li[class*='list-item']").hide();
+    $("button[class*='snipcart']").contents("*").addBack().not("ul, li").click(function(){$.getScript("https://matthewpenkala.github.io/Sarmmies/distJS/reorderShippingRates.js")});
 
     if ($("html").hasClass("snipcart-cart--opened")) {
         if ($('#snipcart button:not(h1,h2,h3,h4,h5,h6).snipcart-button-link[type~=button]:not(span):contains("Edit")').length > 0) {
