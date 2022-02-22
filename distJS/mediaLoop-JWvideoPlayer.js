@@ -14,12 +14,9 @@ var observerJW_svgPlayBTN = new MutationObserver(function(mutations) {
                 }, '\nhas N​̲O​̲T​̲_​̲e​̲x​̲e​̲c​̲u​̲t​̲e​̲d​̲ .𝚝𝚛𝚒𝚐𝚐𝚎𝚛("𝚌𝚕𝚒𝚌𝚔")ㅤforㅤ𝚝𝚛𝚢 {‎…‎} function‎ ‎\n‎ ‎');
                 void(0);
             } finally {
-                $("initTargetSearchJW").filter("div[aria-label*='Play']:not(.jw-svg-icon-play)").on("click mousedown mouseup click", function() {
+                $(targetJW_svgPlayBTN).filter("*[class*='icon-playback']").on("click mousedown mouseup click", function() {
                     console.log("⋘ ―ㅤ𝚕𝚘𝚐𝚂𝚝𝚢𝚕𝚎𝙲𝚂𝚂_𝚙𝚕𝚊𝚢𝙹𝚆 is CONFIRMEDㅤ― ⋙");
                 }, 999);
-                setTimeout(() => {
-                    console.log("\n\n%c‎ㅤ‎⧔‎―‎ 𝗡𝗼𝘄 𝗮𝘁𝘁𝗲𝗺𝗽𝘁𝗶𝗻𝗴 𝘁𝗼 𝗶𝗻𝗶𝘁. & 𝗲𝘅𝗲𝗰𝘂𝘁𝗲 ‎M​̲u​̲t​̲a​̲t​̲i​̲o​̲n​̲O​̲b​̲s​̲e​̲r​̲v​̲e​̲r​̲‎ㅤ‎ ‎%c \n\n‎〔‎𝘾𝙎𝙎 𝙛𝙡𝙪𝙭 𝙙𝙚𝙩𝙚𝙘𝙩𝙞𝙤𝙣 𝙫𝙞𝙖 𝙨𝙩𝙮𝙡𝙚 𝙥𝙧𝙤𝙥𝙚𝙧𝙩𝙮, 🇩🇮🇸🇵🇱🇦🇾: '🇳🇴🇳🇪' ⇆ '🇧🇱🇴🇨🇰'‎〕‎ per HTML ‎＜‎𝚜𝚟𝚐‎＞‎ element, JW™ Video Player @ ‎ᴇʟᴍ-ᴊᴡ_ᴘʟᴀʏ-ʙᴛɴ‎\n\n", "font-size: 20px;background: #d7002d;font-weight: bold;color:#FFF;padding:4px;border-radius: 6px;line-height: 25px;", "font-size: 15px;background: transparent;font-weight: auto;padding:auto;")
-                }, 9);
             }
         }
     });
@@ -35,4 +32,7 @@ Defer(function() {
         $("*[class|=jw]").filter("*[class*='backdrop']").css("opacity", "0.01%").hide();
         $("*[class|=jw]").filter("*[class*='jw-icon'][role~=button]").add(".jw-icon.jw-icon-display.jw-button-color.jw-reset").add("div.jw-icon-rewind").css("opacity", "0").not(targetJW_svgPlayBTN).css("pointer-events", "none");
     }
+    setTimeout(() => {
+        console.log("\n\n%c‎ㅤ‎⧔‎―‎ 𝗡𝗼𝘄 𝗮𝘁𝘁𝗲𝗺𝗽𝘁𝗶𝗻𝗴 𝘁𝗼 𝗶𝗻𝗶𝘁. & 𝗲𝘅𝗲𝗰𝘂𝘁𝗲 ‎M​̲u​̲t​̲a​̲t​̲i​̲o​̲n​̲O​̲b​̲s​̲e​̲r​̲v​̲e​̲r​̲‎ㅤ‎ ‎%c \n\n‎〔‎𝘾𝙎𝙎 𝙛𝙡𝙪𝙭 𝙙𝙚𝙩𝙚𝙘𝙩𝙞𝙤𝙣 𝙫𝙞𝙖 𝙨𝙩𝙮𝙡𝙚 𝙥𝙧𝙤𝙥𝙚𝙧𝙩𝙮, 🇩🇮🇸🇵🇱🇦🇾: '🇳🇴🇳🇪' ⇆ '🇧🇱🇴🇨🇰'‎〕‎ per HTML ‎＜‎𝚜𝚟𝚐‎＞‎ element, JW™ Video Player @ ‎ᴇʟᴍ-ᴊᴡ_ᴘʟᴀʏ-ʙᴛɴ‎\n\n", "font-size: 20px;background: #d7002d;font-weight: bold;color:#FFF;padding:4px;border-radius: 6px;line-height: 25px;", "font-size: 15px;background: transparent;font-weight: auto;padding:auto;")
+    }, 999);
 });
