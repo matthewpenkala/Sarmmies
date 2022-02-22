@@ -12,11 +12,8 @@ var observerJW_svgPlayBTN = new MutationObserver(function(mutations) {
                 console.log("\n‎𝗪𝗔𝗥𝗡𝗜𝗡𝗚: 𝗠𝘂𝘁𝗮𝘁𝗶𝗼𝗻𝗢𝗯𝘀𝗲𝗿𝘃𝗲𝗿 @‎\n‎%o", {
                     nodeJW_divRootPlay: nodeJW_divRootPlay
                 }, '\nhas N​̲O​̲T​̲_​̲e​̲x​̲e​̲c​̲u​̲t​̲e​̲d​̲ .𝚝𝚛𝚒𝚐𝚐𝚎𝚛("𝚌𝚕𝚒𝚌𝚔")ㅤforㅤ𝚝𝚛𝚢 {‎…‎} function‎ ‎\n‎ ‎');
-                void(0);
             } finally {
-                $(targetJW_svgPlayBTN).filter("*[class*='icon-playback']").on("click mousedown mouseup click", function() {
-                    console.log("⋘ ―ㅤ𝚕𝚘𝚐𝚂𝚝𝚢𝚕𝚎𝙲𝚂𝚂_𝚙𝚕𝚊𝚢𝙹𝚆 is CONFIRMEDㅤ― ⋙");
-                }, 999);
+                void(0);
             }
         }
     });
