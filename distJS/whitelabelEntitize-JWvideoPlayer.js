@@ -19,6 +19,8 @@ function elmJW_ifThenFunc() {
 				$(elmJW_initClassSearch).find("*[class*='jw-controlbar']").not("script").children("*").not("video").addBack().css("opacity", "0.01%").hide();
 				$(elmJW_initClassSearch).find("*[class*='jw-rightclick']").not("script").children("*").not("video").addBack().add("div.jw-rightclick.jw-open").css("opacity", "0.01%").hide();
 				$(elmJW_initClassSearch).add("#jw-settings-menu").find("*[class*='jw-settings-menu']").not("script").children("*").not("video").addBack().css("opacity", "0.01%").hide();
+				var Webflow=Webflow||[];Webflow.push(function(){Defer(function(){setTimeout(()=>{$.getScript("https://matthewpenkala.github.io/Sarmmies/distJS/mediaLoop-JWvideoPlayer.min.js")},4999)})});
+				
 			});
 		});
     } else if (document.readyState == 'complete') {
@@ -29,6 +31,8 @@ function elmJW_ifThenFunc() {
 			$(i).find("*[class*='jw-title']").not("script").children("*").not("video").addBack().css("opacity", "0.01%").hide(), $(i).find("*[class*='jw-nextup-container']").not("script").children("*").not("video").addBack().css("opacity", "0.01%").hide(), $(i).find("*[class*='jw-controlbar']").not("script").children("*").not("video").addBack().css("opacity", "0.01%").hide(), $(i).find("*[class*='jw-rightclick']").not("script").children("*").not("video").addBack().add("div.jw-rightclick.jw-open").css("opacity", "0.01%").hide(), $(i).add("#jw-settings-menu").find("*[class*='jw-settings-menu']").not("script").children("*").not("video").addBack().css("opacity", "0.01%").hide();
 			setTimeout(() => {clearInterval(elmJW_itvlFunc);}, 999);
 		})
+		var Webflow=Webflow||[];Webflow.push(function(){Defer(function(){setTimeout(()=>{$.getScript("https://matthewpenkala.github.io/Sarmmies/distJS/mediaLoop-JWvideoPlayer.min.js")},999)})});
+	    
 		setTimeout(function(){console.clear(),clearInterval(elmJW_itvlFunc)},9999);
     } else if (document.readyState == 'interactive') {
 		initSleep(999);
