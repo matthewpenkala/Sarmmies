@@ -34,6 +34,11 @@ setTimeout(() => {
                 }
             } catch (error) {
                 console.clear();
+            } finally {
+                setTimeout(() => {
+                    var svgFilterRedraw = $(aHREF_tou2).get(0);
+                    svgFilterRedraw.style.display = "none", svgFilterRedraw.offsetHeight, svgFilterRedraw.style.display = "";
+                }, 999);
             }
         }
     });
