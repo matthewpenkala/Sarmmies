@@ -19,6 +19,22 @@ setTimeout(() => {
             $(aHREF_tou2).filter(function () {
                 return !($(this).text().toLowerCase().includes("†"))
             }).addClass("no-faux-underline").css("text-decoration", "underline").removeClass("faux-underline");
+            try {
+                function cssUnmultiply(selector) {
+                    $(selector).css("filter", "url(#unmultiplyAlphaInverted");
+                }
+                if ($(aHREF_tou2).hasClass("faux-underline") == 'true') {
+                    cssUnmultiply($(this));
+                    if ($(aHREF_tou2).find("sup").hasClass("no-faux-underline") == 'true') {
+                        cssUnmultiply($(this));
+                    }
+                } else if ($("*").hasClass("faux-underline") || $("*").hasClass("no-faux-underline")) {
+                    cssUnmultiply($("a.faux-underline"));
+                    cssUnmultiply($("sup.no-faux-underline"));
+                }
+            } catch (error) {
+                console.clear();
+            }
         }
     });
 
