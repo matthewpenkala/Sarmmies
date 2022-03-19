@@ -1,0 +1,186 @@
+@font-face { 
+  font-family:'Plus Jakarta';
+  src:url('./fonts/604930b8b2bc7710ba169603_PlusJakartaDisplay-Bold.otf') format('opentype');
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+} 
+@font-face { 
+  font-family:'Plus Jakarta';
+  src:url('./fonts/604930b8b2bc7756d3169604_PlusJakartaDisplay-Regular.otf') format('opentype');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+} 
+@font-face { 
+  font-family:'Plus Jakarta';
+  src:url('./fonts/604930b8b2bc77698b169605_PlusJakartaDisplay-Light.otf') format('opentype');
+  font-weight:300;
+  font-style:normal;
+  font-display:swap;
+} 
+@font-face { 
+  font-family:'Plus Jakarta';
+  src:url('./fonts/604930b8b2bc77690c169606_PlusJakartaDisplay-Medium.otf') format('opentype');
+  font-weight:500;
+  font-style:normal;
+  font-display:swap;
+} 
+* { 
+    box-sizing: border-box;
+} 
+
+body { 
+    margin: 0; 
+    min-height: 100%; 
+    background-color: rgb(255, 255, 255); 
+    font-family: "Plus Jakarta", sans-serif; 
+    color: rgb(68, 55, 77); 
+    font-size: 16px; 
+    line-height: 22px; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px;
+} 
+
+html { 
+    font-family: sans-serif; 
+    height: 100%; 
+    text-size-adjust: 100%;
+} 
+
+.preloader-div { 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    z-index: 999999; 
+    overflow: hidden; 
+    margin: auto; 
+    padding-top: 0px; 
+    padding-left: 0px; 
+    background-color: rgb(24, 22, 94); 
+    background-image: radial-gradient(circle at 50% 50%, transparent 25%, rgba(0, 0, 0, 0.25) 99%); 
+    filter: saturate(93.75%) contrast(106.25%); 
+    object-fit: fill; 
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    margin-top: auto; 
+    margin-right: auto; 
+    margin-bottom: auto; 
+    margin-left: auto;
+} 
+
+.crisp-edges { 
+    image-rendering: -webkit-optimize-contrast !important;
+} 
+
+:selection { 
+    color: rgb(255, 255, 255); 
+    background: #ff8041; 
+    background-image: initial; 
+    background-position-x: initial; 
+    background-position-y: initial; 
+    background-size: initial; 
+    background-repeat-x: initial; 
+    background-repeat-y: initial; 
+    background-attachment: initial; 
+    background-origin: initial; 
+    background-clip: initial; 
+    background-color: rgb(255, 128, 65);
+} 
+
+:-webkit-scrollbar { 
+    width: 12.5px;
+} 
+
+:-webkit-scrollbar-thumb { 
+    background-color: rgba(103, 92, 110, 0.99); 
+    border-radius: 12.5px; 
+    border-top-left-radius: 12.5px; 
+    border-top-right-radius: 12.5px; 
+    border-bottom-right-radius: 12.5px; 
+    border-bottom-left-radius: 12.5px;
+} 
+
+:-webkit-scrollbar-track { 
+    background-color: rgba(208, 205, 210, 0.99); 
+    border-radius: 0px; 
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px; 
+    border-bottom-right-radius: 0px; 
+    border-bottom-left-radius: 0px;
+} 
+
+.invisible { 
+    display: none; 
+    opacity: 0;
+} 
+
+.w-embed:after,.w-embed:before { 
+    content: " "; 
+    display: table; 
+    grid-column-start: 1; 
+    grid-row-start: 1; 
+    grid-column-end: 2; 
+    grid-row-end: 2;
+} 
+
+.w-embed:after { 
+    clear: both;
+} 
+
+img { 
+    border: 0; 
+    max-width: 100%; 
+    vertical-align: middle; 
+    display: inline-block; 
+    border-top-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 0px; 
+    border-left-width: 0px; 
+    border-top-style: initial; 
+    border-right-style: initial; 
+    border-bottom-style: initial; 
+    border-left-style: initial; 
+    border-top-color: initial; 
+    border-right-color: initial; 
+    border-bottom-color: initial; 
+    border-left-color: initial; 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial;
+} 
+
+.preloader-logo { 
+    position: static; 
+    left: 0px; 
+    top: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    display: block; 
+    overflow: visible; 
+    width: 25%; 
+    margin-top: 25vh; 
+    margin-right: auto; 
+    margin-left: auto; 
+    clear: none; 
+    filter: contrast(118.75%) saturate(87.5%); 
+    text-align: left; 
+    object-fit: fill; 
+    object-position: 50% 50%; 
+    overflow-x: visible; 
+    overflow-y: visible;
+} 
+
+svg:not(:root) { 
+    overflow: hidden; 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+} 
+
+
