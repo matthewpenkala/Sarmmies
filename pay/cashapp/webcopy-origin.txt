@@ -1,0 +1,48 @@
+Uri: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\ajax\libs\jquery\3.5.1\jquery.min.js
+Content Type: text/javascript
+
+Uri: https://cash-f.squarecdn.com/preact/541b3eef0632408c4bd21ad66eb51e9c60531182/assets/fonts/cashmarket/cash-market-rounded-medium.woff2
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\preact\541b3eef0632408c4bd21ad66eb51e9c60531182\assets\fonts\cashmarket\cash-market-rounded-medium.woff2
+Content Type: application/octet-stream
+
+Uri: https://cash-f.squarecdn.com/preact/541b3eef0632408c4bd21ad66eb51e9c60531182/assets/fonts/cashmarket/cash-market-rounded-regular.woff2
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\preact\541b3eef0632408c4bd21ad66eb51e9c60531182\assets\fonts\cashmarket\cash-market-rounded-regular.woff2
+Content Type: application/octet-stream
+
+Uri: https://cash-f.squarecdn.com/preact/541b3eef0632408c4bd21ad66eb51e9c60531182/cashtag.js
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\preact\541b3eef0632408c4bd21ad66eb51e9c60531182\cashtag.js
+Content Type: application/javascript
+
+Uri: https://cash.app/$sarmmies?qr=1
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\$sarmmies.html
+Content Type: text/html
+
+Uri: https://cash.app/apple-touch-icon.png
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://cash.app/favicon.png
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\favicon.png
+Content Type: image/png
+
+Uri: https://cash.app/icon-196.png
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\icon-196.png
+Content Type: image/png
+
+Uri: https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\tailwindcss@2.2.19\dist\tailwind.min.css
+Content Type: text/css
+
+Uri: https://www.poof.io/sarmmies/cashapp/27154170
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\sarmmies\cashapp\27154170.html
+Content Type: text/html
+
+Uri: https://www.poof.io/static/assets/css/cash.css
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\static\assets\css\cash.css
+Content Type: text/css
+
+Uri: https://www.poof.io/static/assets/images/loadingIcon.png
+File Name: C:\Users\matth\Downloads\Poof\www.poof.io\static\assets\images\loadingIcon.png
+Content Type: image/png
+

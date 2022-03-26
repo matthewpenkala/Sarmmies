@@ -1,0 +1,264 @@
+<html>
+   <head>
+      <title>Poof Cash App Payments</title>
+      <meta charset="utf-8">
+      <meta name="description" content="Automated CashApp payment processing powered by Poof and Square">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="../../static/assets/css/cash.css" rel="stylesheet">
+      <link href="../../tailwindcss%402.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <template id="tmpl">
+         <style>:host{shape-rendering:geometricPrecision!important;text-rendering:optimizeSpeed;color-rendering:optimizeSpeed;image-rendering:-webkit-optimize-contrast;will-change:auto}*{shape-rendering:geometricPrecision!important;text-rendering:optimizeSpeed;color-rendering:optimizeSpeed;image-rendering:-webkit-optimize-contrast;will-change:auto}</style>
+         <slot></slot>
+      </template>
+   </head>
+   <style>
+      .p-4
+      {
+      padding:.8rem;
+      }
+      .form-input:focus {
+      box-shadow: 0px 0px 1px 3px #a8ceea !important;
+      transition: opacity 0.8s cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1),visibility 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+      outline: none !important;
+      }
+   </style>
+   <body>
+      <div id="__layout">
+         <div class="text-sm md:text-base text-gray-600">
+            <div class="bg-gray-100 min-h-screen flex items-center justify-center">
+               <div>
+                  <div class="shadow-md" style="max-width: 450px;">
+                     <div class="bg-green-500 p-4 rounded-t-lg" style="background-color:#00b63e">
+                        <div class="flex">
+                           <h3 class="lg:text-lg tracking-wider font-medium text-white truncate flex-1">Pay with Cash App</h3>
+                           <div class="ml-2 relative checkout-metadata__trigger">
+                              <a id="checkoutIcon" href="#" class="text-green-100 hover:text-green-800 cursor-pointer">
+                                 <svg id="chechoutSVG" viewbox="0 0 20 20" fill="currentColor" class="dots-vertical w-6 h-6">
+                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                 </svg>
+                              </a>
+                              <div id="checkoutTooltip" class="rounded-lg origin-top-right absolute right-0 mt-2 w-64 shadow-lg z-10">
+                                 <div class="bg-white rounded-lg shadow-xs">
+                                    <div>
+                                       <div class="flex px-2 bg-gray-600 rounded-t-lg py-2">
+                                          <div title="$2.50" class="w-1/2">
+                                             <div class="text-sm text-gray-400 px-2">
+                                                Total Amount
+                                             </div>
+                                             <div class="px-2 font-medium text-gray-200">
+                                                $113.14
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div title="6qMEbTqZcQyPXXrv3" class="py-2">
+                                          <div class="text-sm text-gray-500 px-4">
+                                             Items
+                                          </div>
+                                          <div class="px-4 truncate font-mono"></div>
+                                       </div>
+                                       <div title="6qMEbTqZcQyPXXrv3" class="py-2">
+                                          <div class="text-sm text-gray-500 px-4">
+                                             Order Note
+                                          </div>
+                                          <div class="px-4 truncate font-mono">
+                                             27154170
+                                          </div>
+                                       </div>
+                                       <div title="US" class="py-2">
+                                          <div class="text-sm text-gray-500 px-4">
+                                             Currency
+                                          </div>
+                                          <div class="px-4 truncate font-mono">
+                                             USD
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bg-white p-8 rounded-lg" style="max-width: 450px;">
+                        <div>
+                           <div>
+                              <div class="mb-4">
+                                 <div style="filter: contrast(105%);">
+                                    <div class="flex justify-center mb-4" style="filter: url(&quot;data:image/svg+xml,<svg xmlns=\&quot;http://www.w3.org/2000/svg\&quot;><filter id=\&quot;svgSharpen\&quot;><feConvolveMatrix order=\&quot;3 3\&quot; bias=\&quot;0.01\&quot; divisor=\&quot;4.2\&quot; preserveAlpha=\&quot;true\&quot; kernelMatrix=\&quot;0 -1 0 -1 7.9 -1 0 -1 0\&quot;/></filter></svg>#svgSharpen&quot;);">
+                                       <a href="https://cash.app/$sarmmies" target="_blank" class="bg-white shadow-md rounded-lg p-4" onmouseover="this.style.cursor='alias'" onmouseout="this.style.cursor=''">
+                                          <script src="./dotlottie-player.js"></script>
+                                          <dotlottie-player id="dotlottie-player" src="./lf20_07dicwny.lottie"  background="transparent"  speed="1"  style="width: 150 !important; height: 150 !important;"  loop  autoplay alt="$CashCode"></dotlottie-player>
+                                          <script>document.querySelector("#dotlottie-player").shadowRoot.append(tmpl.content.cloneNode(true));</script>
+                                          <!-- <img src="https://cash.app/qr/sarmmies?size=288&margin=0" height="150" width="150" alt="$CashCode"> -->
+                                       </a>
+                                    </div>
+                                    <a href="https://cash.app/$sarmmies" target="_blank" class="text-center block -mt-2 lg:hidden">
+                                    <span class="rounded-lg text-gray-600 font-medium px-6 py-1 text-sm transition-colors">Tap to Pay</span>
+                                    </a>
+                                    <a href="https://cash.app/$sarmmies" target="_blank" class="mb-4 block">
+                                       <h2 class="text-2xl text-gray-700 font-medium text-center">sarmmies</h2>
+                                    </a>
+                                    <p class="leading-6 md:leading-8 text-gray-500 text-center my-4">
+                                       Include
+                                       <span class="font-medium tracking-widest text-green-500" style="color: #00D54B;">27154170</span> in your note so we can process your payment.
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="mb-4">
+                                 <div>
+                                    <div>
+                                       <label for="note" class="block text-sm leading-5 font-medium text-gray-700">Payment Code</label>
+                                       <div class="mt-1 relative rounded-md shadow-sm">
+                                          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                             <span class="text-gray-500 sm:text-sm sm:leading-5">
+                                             </span>
+                                          </div>
+                                          <input id="note" value="27154170" readonly="readonly" class="form-input font-medium block w-full pl-7 pr-12 sm:text-sm sm:leading-5 tracking-widest" style="padding-left:.7rem">
+                                          <div class="absolute inset-y-0 right-0 flex items-center">
+                                             <button style="margin-right:10px;font-size:13px">Copy</button>
+                                          </div>
+                                       </div>
+                                       <p class="text-xs text-gray-500 mt-1">The same green code above.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div>
+                                 <div>
+                                    <label for="price" class="block text-sm leading-5 font-medium text-gray-700">Amount to send</label>
+                                    <div class="mt-1 relative rounded-md shadow-sm">
+                                       <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                          <span class="text-gray-500 sm:text-sm sm:leading-5">
+                                          $
+                                          </span>
+                                       </div>
+                                       <input id="price" value="113.14" readonly="readonly" class="form-input font-medium block w-full pl-7 pr-12 sm:text-sm sm:leading-5 tracking-wide">
+                                       <div class="absolute inset-y-0 right-0 flex items-center">
+                                          <span aria-label="currency" class="text-gray-500 sm:text-sm sm:leading-5 px-2">
+                                          USD
+                                          </span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mt-6 -mx-8 text-center flex items-center bg-gray-50 -mb-8 rounded-b-xl p-4 px-8 justify-between" style="margin-top:50px">
+                              <div class="text-gray-500 font-medium text-xs md:text-sm">
+                                 Page will redirect upon payment...
+                              </div>
+                              <div>
+                                 <img class="loadingIcon" alt='loadingIcon' src="../../static/assets/images/loadingIcon.png">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mt-4">
+                     <div class="flex justify-between items-center px-2">
+                        <span class="text-sm">Cash.App Payment Processor [Build 2.6.1]</span>
+                        <div>
+                           <a href="https://www.sarmmies.bio/" class="font-medium underline text-sm">Cancel Checkout</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="embed-code___hide w-embed w-script" style="display: none; opacity: 0%; pointer-events: none;">
+            <svg xmlns="http://www.w3.org/2000/svg">
+               <filter id="svgSharpenEdgesFTR">
+                  <feConvolveMatrix order="3 3" preserveAlpha="true" divisor="1" bias="0" kernelMatrix="-1,-1,-1 -1,9,-1 -1,-1,-1"></feConvolveMatrix>
+               </filter>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg">
+               <filter id="svgGradientMapFTR">
+                  <feColorMatrix type="saturate" values="0"></feColorMatrix>
+                  <feComponentTransfer color-interpolation-filters="sRGB">
+                     <feFuncR type="table" tableValues="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0.97,0.94,0.92,0.89,0.86,0.83,0.8,0.77,0.75,0.72,0.69,0.66,0.63,0.61,0.58,0.55,0.52,0.49,0.46,0.44,0.41,0.38,0.35,0.32,0.29,0.27,0.27"></feFuncR>
+                     <feFuncG type="table" tableValues="0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.49,0.48,0.47,0.46,0.45,0.44,0.42,0.41,0.4,0.39,0.38,0.37,0.36,0.35,0.34,0.33,0.31,0.3,0.29,0.28,0.27,0.26,0.25,0.24,0.23,0.22,0.22"></feFuncG>
+                     <feFuncB type="table" tableValues="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.26,0.26,0.26,0.26,0.26,0.27,0.27,0.27,0.27,0.27,0.27,0.28,0.28,0.28,0.28,0.28,0.29,0.29,0.29,0.29,0.29,0.29,0.3,0.3,0.3,0.3,0.3"></feFuncB>
+                  </feComponentTransfer>
+               </filter>
+            </svg>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+         $( "#checkoutIcon" ).click(function() {
+             $( "#checkoutTooltip" ).toggle( "fast" );
+         });
+         $("body").click(function(e) {
+             if (($( ".checkout-metadata__trigger" ).has( e.target ).length === 0)) {
+               $( "#checkoutTooltip" ).hide( "fast" );
+             };
+         })
+      </script>
+      <script>
+         function myFunction(){
+             x = x+1;
+             console.log('myFunction Called')
+         
+         
+             var paid = "no"
+         
+         
+             var response = fetch('/cashapp/27154170').then(function(response) {
+           return response.json();
+         }).then(function(responseJson) {
+           paid = responseJson.paid;
+             if (paid != "no") {
+                 window.parent.location.href = paid;
+             }
+         })
+         
+         }
+         var x = 1;
+         
+         if (x!=180)
+         {
+         myFunction();
+         }
+         
+         setInterval(function(){
+             myFunction()
+         }, 15000)
+         
+      </script>
+      <script>
+         $(document).ready(function () {
+             $("button").click(function (event) {
+                 event.preventDefault();
+                 CopyToClipboard("27154170", true, "Value copied");
+             });
+         });
+         
+         function CopyToClipboard(value, showNotification, notificationText) {
+             var $temp = $("<input>");
+             $("body").append($temp);
+             $temp.val(value).select();
+             document.execCommand("copy");
+             $temp.remove();
+         
+             if (typeof showNotification === 'undefined') {
+                 showNotification = true;
+             }
+             if (typeof notificationText === 'undefined') {
+                 notificationText = "Copied to clipboard";
+             }
+         
+             var notificationTag = $("div.copy-notification");
+             if (showNotification && notificationTag.length == 0) {
+                 notificationTag = $("<div/>", { "class": "copy-notification", text: notificationText });
+                 $("body").append(notificationTag);
+         
+                 notificationTag.fadeIn("slow", function () {
+                     setTimeout(function () {
+                         notificationTag.fadeOut("slow", function () {
+                             notificationTag.remove();
+                         });
+                     }, 1000);
+                 });
+             }
+         }
+      </script>
+      <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="9e01eede50210aaf20e62988-|49" defer=""></script>
+   </body>
+</html>
