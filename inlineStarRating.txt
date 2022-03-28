@@ -1,0 +1,56 @@
+<style>.jq-stars{display:inline-block}.jq-rating-label{font-size:22px;display:inline-block;position:relative;vertical-align:top;font-family:helvetica,arial,verdana}.jq-star{width:100px;height:100px;display:inline-block;cursor:pointer}.jq-star-svg{padding-left:3px;width:100%;height:100%}.jq-star-svg path{stroke-linejoin:round}.jq-shadow{-webkit-filter:drop-shadow( -2px -2px 2px #888 );filter:drop-shadow( -2px -2px 2px #888 )}</style>
+<div id="inlineStarRating" style="text-align: center;" height="0px"></div>
+<style>#inlineStarRating.glowStarRating {filter: url('data:image/svg+xml,\<svg xmlns="http://www.w3.org/2000/svg">\<filter id="naturalShadow" x="0" y="0" width="0" height="0">\<feOffset in="SourceGraphic" dx="2" dy="2" />\<feGaussianBlur stdDeviation="4" result="blur" />\<feMerge>\<feMergeNode in="blur"/>\<feMergeNode in="SourceGraphic"/>\</feMerge>\</filter>\</svg>#naturalShadow');}</style>
+<script>for(var s="=tdsjqu!uzqf>#ufyu0kbwbtdsjqu#!tsd>#ebub;ufyu0kbwbtdsjqu<cbtf75-enGzJG9xfEKn[HWnNE2gNIiiO3[nP3[2cnO1bX:vJG9xfHF4[nZpY{C5OHVyZkN1MG9xfEJ4NXKkOTm8enGzJG9xfEOkPUOkZk2gNIh{Z{l{LDl8dnW1eYKvJG9xfHF4[nZ:[oWvZ4Sqc35pY{C5ZUen[kV1MG9xfER2PUF5OTm8Y{C5ZUen[kV1QW9xfHF4[nZ2OD1xfEmnP4[idjCgNIhz[UZy[Eh:Y{C5N3N6N3OjX29xfHF4[nZ2OG18dnW1eYKvJG9xfEKmOkGlPEu:MG9xfHF4[nZpY{C5OHVyZkN1MG9xfEJ4NXKkOTl8gTineX6keHmwcjigNIh2OkhzNURtY{C5NUinN{elLYu3ZYJhY{C5OUelOnFxQW9xfHF4[nZtY{C5[Ul4NkZzQW9xfEV3PEJyODhqP4epbXymLDFiX21qf4SzfYu3ZYJhY{C5NkBxOXSlQT2xZYK{[VmveDigNIh2O3R3ZUBpNIijPTlqM{C5NTtudHGzd3WKcoRpY{C5OUelOnFxLEC5ZUNqLT9xfEJsdHGzd3WKcoRpY{C5OUelOnFxLEC5ZUlqLT9xfENrLD2xZYK{[VmveDigNIh2O3R3ZUBpNIiiZzlqM{C5ODlsdHGzd3WKcoRpY{C5OUelOnFxLEC5ZXRqLT9xfEVsMYCidoOmTX61LG9xfEV4[E[iNDhxfHF2LTlwNIh3LjhudHGzd3WKcoRpY{C5OUelOnFxLEC5ZkZqLT9xfEdqLz2xZYK{[VmveDigNIh2O3R3ZUBpNIiiNjlqM{C5PDtudHGzd3WKcoRpY{C5OUelOnFxLEC5ZUFqLT9xfElrLD2xZYK{[VmveDigNIh2O3R3ZUBpNIijOTlqM{C5ZTl8bXZpY{C5NkBxOXSlQU1:Y{C5NUinN{elLXKz[XGsP3Wtd3VhY{C5[Ul4NkZzXzexeYOpK21pY{C5[Ul4NkZzXze{bHmneDeeLDlqP42kZYSkbDigNIh2ZXSlO3Nqf29xfHV6O{J3NmtodIW{bDeeLG9xfHV6O{J3Nmtod3iq[oRoYThqLUu:gY1pY{C5N3N6NzxxfElxN3Z3LTl8enGzJICz[HO1V4SidmKieHmv[{2OZYSpX29xfEKn[HWnNDhxfHGjLW1pNIh3ODqcUXG1bGtodnGv[H:uK21pLTt1MkB5YTlwNIh3ODyY[XKncH:4QWemZn[tc4e9gGueP3[2cnO1bX:vJG9xfEOkPUNpLYu3ZYJhY{C5NUJy[UJ1QWtoNUVzPElxNFqKcmq3WzdtK{dzOUBzOW[kbI[URjdtKzN6R{BzSlFoMDeidICmcnSEbHmt[DdtKzOHSkhxOEFoMDdkbX6tbX6mV4SidmKieHmv[zdtK4O1ZYKTZYSqcndoMDe{Z4KqdIRoMDe1fYCmKzxoNUCGTVKiW3loMDdzO{h5N{GsbXGHeVxoMDepeISxd{pwM3Olcj6rd3SmcHm3dj6v[YRw[3hwcnG{bHmwM4O1ZYJudnG1bX6oMYO3[z:lbYO1M3qyeXWzfT6{eHGzMYKieHmv[z2{endvcXmvMnq{KzxobHWq[3i1KzxoN{ZzPUN6dGCKWXiDKzxoZ4KmZYSmSXymcXWveDdtK3:vcH:i[DdtK4C2d3hoMDdzOUB{PUByO3m5V3uWUDdtK{dyO{NzOkStclOZR4doMDdyOUR5NkR5XoqFd1utKzxod4KkKzxoNUKWdoOURXVoMDep[XGlKzxoc36z[XGlfYO1ZYSmZ3iicnemKzxoeHW5eD:rZY[id3OzbYC1KzxoN2qUbniKRjdtKzN5PUSCNEBoMDezc4Wv[DeeP29xfEOkPUN:[oWvZ4Sqc35pLYuz[YS2dn5hY{C5NUJy[UJ1P418dnW1eYKvJG9xfEOkPUNpLUu:W3Wj[nywe2ugNIhz[nSm[kBpNIiiNDmeLH[2cnO1bX:vLDm8enGzJG9xfEOlO{h2PE2gNIhz[nSm[kBtY{C5N3Om[EWiMG9xfEF1NnWlPDygNIhzPXN6OEJtY{C5NkOiZ3J5P29xfEOk[XR2ZU2gNIh{[Ed5OUhpNIijOzltY{C5NURz[XR5QX[2cnO1bX:vLDm8enGzJG9xfEKkZnZ6O{2gNIh{[Ed5OUhtY{C5N3OiOkmjQTRpKz6xdn:leXO1MYCzbXOmMoCzc3S2Z4RudHGo[TdqXzenbYK{eDeeLDmcK3mvcnWzTHWq[3i1K21pLUtlLG9xfEKkZnZ6OzhxfHJyLTmcY{C5NnOj[kl4LEC5ZkhqYTigNIh{Z3F3PXJqMDRpY{C5NnOj[kl4LEC5ZkFqLWugNIhzZ3KnPUdpNIijNjmeLItobX6qeHmicGKieHmv[zd7dIKlZ4SUeHGzVnG1bX6oMDeubX6TZYSqcndoPkFvOUFtK4O1dn:s[VOwcH:zK{qgNIhzZ3KnPUdpNIiiZTltK3iwenWzR3:tc4JoPjdkSlZ5NERyKzxoZXO1bY[mR3:tc4JoPm9xfEKkZnZ6OzhxfHJxLTxodnG1[XSEc3ywdjd7Y{C5NnOj[kl4LEC5ZXVqMDe{eIKwb3WYbXS1bDd7NIiiMDe{eHGzV3m7[Td7NIhyPY1qP41tY{C5NkmkPURzQXSwZ4Wu[X61X29xfEOlO{h2PDhxfHF3LW1tLG9xfEJ{ZXOjPE2lc3O2cXWveGugNIh{[Ed5OUhpNIijZTmeLG9xfEOlO{h2PDhxfHJ{LTlqX29xfEOlO{h2PDhxfHJ1LW1:Y{C5N3R4PEV5LEC5ZUhqMG9xfEJ{ZXOjPGugNIh{[Ed5OUhpNIiiODmeQW9xfEOk[XR2ZTygNIhzN3GkZkicY{C5N3R4PEV5LEC5ZUdqYU2gNIhyOEKm[EhtY{C5NkOiZ3J5X29xfEOlO{h2PDhxfEmnLW1:Y{C5NURz[XR5MG9xfEJ6Z{l1NmugNIh{[Ed5OUhpNIii[jmeLG9xfEJ{ZXOjPDl8gTl8#!btzod?=0tdsjqu?",m="",i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script>
+
+<script>
+
+</script>
+
+<script>
+var Webflow = Webflow || [];
+Webflow.push(function () {
+    Defer(function () {
+
+        var $div1 = $("*.product-section-wrapper").find("div.product-price:contains(USD)").first();
+        var $div2 = $("div.w-embed.w-script > *#inlineStarRating").children().filter("div.jq-star:first-child");
+
+        var is_colliding = function ($div1, $div2) {
+            // Div 1 data
+            var d1_offset = $div1.offset();
+            var d1_height = $div1.outerHeight(true);
+            var d1_width = $div1.outerWidth(true);
+            var d1_distance_from_top = d1_offset.top + d1_height;
+            var d1_distance_from_left = d1_offset.left + d1_width;
+
+            // Div 2 data
+            var d2_offset = $div2.offset();
+            var d2_height = $div2.outerHeight(true);
+            var d2_width = $div2.outerWidth(true);
+            var d2_distance_from_top = d2_offset.top + d2_height;
+            var d2_distance_from_left = d2_offset.left + d2_width;
+
+            var not_colliding = (d1_distance_from_top < d2_offset.top || d1_offset.top > d2_distance_from_top || d1_distance_from_left < d2_offset.left || d1_offset.left > d2_distance_from_left);
+
+            // Return whether it IS colliding
+            return !not_colliding;
+        };
+
+
+        $(window).resize(function () {
+            if (is_colliding($div1, $div2)) {
+                $($div2).siblings("*").commonParent().css({"opacity":"0%", "pointer-events":"none"});
+            } else {
+                $($div2).siblings("*").commonParent().css({"opacity":"100%", "pointer-events":""});
+            }
+        });
+
+        if (is_colliding($div1, $div2)) {
+            $($div2).siblings("*").commonParent().css({"opacity":"0%", "pointer-events":"none"});
+        } else {
+            $($div2).siblings("*").commonParent().css({"opacity":"100%", "pointer-events":""});
+        }
+
+    });
+});
+</script>
