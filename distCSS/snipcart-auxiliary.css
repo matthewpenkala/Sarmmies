@@ -123,7 +123,16 @@ div[class|=snipcart][class*="loading"] > div.snipcart-loading-overlay__pending >
 }
 .snipcart-loading-component__content > svg.snipcart-loading-component__icon:not(span) {
 	filter: url(#colorRemap-buttonSC) saturate(0.89) contrast(1.11) brightness(94.5%) !important;
-  }
+}
+#snipcart > div > div > div > div > div > .snipcart__loading__screen__icon {
+	filter: url(#colorRemap-buttonSC) saturate(0.89) contrast(1.11) brightness(94.5%) !important;
+}
+* > svg.snipcart__loading__screen__icon.snipcart__icon {
+	filter: url(#colorRemap-buttonSC) saturate(0.89) contrast(1.11) brightness(94.5%) !important;
+}
+.snipcart__loading__screen__content > svg.snipcart__icon {
+	filter: url(#colorRemap-buttonSC) saturate(0.89) contrast(1.11) brightness(94.5%) !important;
+}
 .snipcart-checkout-step__icon > svg.snipcart__icon > svg:not(div) {
 	color: #ff8041 !important;
 }
