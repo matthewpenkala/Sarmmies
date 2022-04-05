@@ -12,22 +12,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.6/pdfobject.min.js" integrity="sha384-mbv0/RdtmUblXg/mZxb03Zct0/tb77G4gGRnsRd3lepTpu7+3ablmHcgdiEOA0/Z" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <object type="application/pdf" data="./Dwolla%20Account%20Terms%20of%20Service.pdf" width="100%" height="100%" display="none" style="opacity(0)"></object>
         <script>
-            document.addEventListener("readystatechange", (event) => {
-                if (event.target.readyState === "complete") {
-                    setTimeout(() => {
-                        var theFrame = document.querySelector(
-                            "* > iframe:not(embed, blockquote).pdfobject"
-                        ).firstElementChild;
-                        console.log(theFrame);
-                        var theFrameDocument =
-                            theFrame.contentDocument || theFrame.contentWindow.document;
-                        console.log(theFrameDocument);
-                        var sizerPDF = theFrameDocument.getElementById("sizer");
-                        console.log(sizerPDF);
-                    }, 999);
-                }
-            });
-
             var PDFoptions = {
                 pdfOpenParams: {
                     navpanes: 0,
@@ -48,6 +32,25 @@
                 document.body.parentElement.querySelector("body:not(head)"),
                 PDFoptions
             );
+
+            var theFrame = "";
+            var theFrameDocument = "";
+            var sizerPDF = "";
+            document.addEventListener("readystatechange", (event) => {
+                if (event.target.readyState === "complete") {
+                    setTimeout(() => {
+                        theFrame = document.querySelector(
+                            "* > iframe:not(embed, blockquote).pdfobject"
+                        ).firstElementChild;
+                        console.log(theFrame);
+                        theFrameDocument =
+                            theFrame.contentDocument || theFrame.contentWindow.document;
+                        console.log(theFrameDocument);
+                        sizerPDF = theFrameDocument.getElementById("sizer");
+                        console.log(sizerPDF);
+                    }, 999);
+                }
+            });
         </script>
     </body>
 
