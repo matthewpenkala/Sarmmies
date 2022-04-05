@@ -41,8 +41,8 @@
                 if (event.target.readyState === "complete") {
                     setTimeout(() => {
                         theFrame = document.querySelector(
-                            "* > iframe:not(embed, blockquote).pdfobject"
-                        ).firstElementChild;
+                            "body > iframe.pdfobject"
+                        );
                         console.log(theFrame);
                         theFrameDocument =
                             theFrame.contentDocument || theFrame.contentWindow.document;
