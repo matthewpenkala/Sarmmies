@@ -2,10 +2,10 @@
 <html lang="en">
 
     <head>
-        <link rel="preload" type="application/pdf" href="https://www.sarmmies.bio/Dwolla%20Account%20Terms%20of%20Service.pdf" lang="en">
-        <link rel="prefetch" href="https://www.sarmmies.bio/" referrerpolicy="origin-when-cross-origin">
-        <link rel="prerender" href="https://www.sarmmies.bio/dwolla/account-tos">
-        <link rel="preconnect" href="https://www.sarmmies.bio/dwolla/privacy">
+        <link prefetch="" href="https://www.sarmmies.bio/Dwolla%20Account%20Terms%20of%20Service.pdf" rel="preload" as="fetch" type="application/pdf" fetchpriority="high" crossorigin="anonymous">
+        <link prefetch="" href="https://www.sarmmies.bio/dwolla/account-tos" rel="prerender" fetchpriority="auto" referrerpolicy="origin">
+        <link rel="prefetch" href="https://www.sarmmies.bio/" fetchpriority="low" referrerpolicy="origin-when-cross-origin" prefetch>
+        <link rel="preconnect" href="https://www.sarmmies.bio/dwolla/privacy" fetchpriority="low" crossorigin="anonymous" referrerpolicy="origin">
     </head>
 
     <body>
@@ -43,7 +43,7 @@
                 PDFJS_URL: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"
             };
             PDFObject.embed(
-                "https://src.sarmmies.bio/docs/Dwolla%20Account%20Terms%20of%20Service.pdf",
+                "./Dwolla%20Account%20Terms%20of%20Service.pdf",
                 document.body.parentElement.querySelector("body:not(head)"),
                 PDFoptions
             );
