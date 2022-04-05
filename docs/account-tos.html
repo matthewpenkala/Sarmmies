@@ -16,7 +16,7 @@
                 if (event.target.readyState === "complete") {
                     setTimeout(() => {
                         var theFrame = document.querySelector(
-                            "figure#DWOLLA-ACC-TOS, figure#DWOLLA-PRIVACY > iframe:not(embed, blockquote).pdfobject"
+                            "* > iframe:not(embed, blockquote).pdfobject"
                         ).firstElementChild;
                         console.log(theFrame);
                         var theFrameDocument =
