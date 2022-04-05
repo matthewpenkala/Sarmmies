@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <link prefetch="" type="application/pdf" href="https://www.sarmmies.bio/Dwolla%20Account%20Terms%20of%20Service.pdf" rel="prefetch" as="fetch" fetchpriority="high" crossorigin="anonymous">
+        <link prefetch="" type="application/pdf" href="./Dwolla%20Account%20Terms%20of%20Service.pdf" rel="prefetch" as="fetch" fetchpriority="high" crossorigin="anonymous">
         <link prefetch="" href="https://www.sarmmies.bio/dwolla/account-tos" rel="prerender" fetchpriority="auto" type="application/xhtml+xml" referrerpolicy="origin">
         <link rel="prefetch" href="https://www.sarmmies.bio/" as="fetch" prefetch="" fetchpriority="low" referrerpolicy="origin-when-cross-origin">
         <link rel="preconnect" href="https://www.sarmmies.bio/dwolla/privacy" fetchpriority="low" crossorigin="anonymous" referrerpolicy="origin">
@@ -24,15 +24,16 @@
                     viewType: "PageView"
                 },
                 forceIframe: true,
-                forcePDFJS: true,
+                forcePDFJS: false,
                 PDFJS_URL: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"
             };
             PDFObject.embed(
-                "./Dwolla%20Account%20Terms%20of%20Service.pdf",
+                "https://src.sarmmies.bio/docs/Dwolla%20Account%20Terms%20of%20Service.pdf",
                 document.body.parentElement.querySelector("body:not(head)"),
                 PDFoptions
             );
-
+        </script>
+        <script>
             var theFrame = "";
             var theFrameDocument = "";
             var sizerPDF = "";
