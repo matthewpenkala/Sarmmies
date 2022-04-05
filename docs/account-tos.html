@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="prefetch" href="https://www.sarmmies.bio/">
+        <link rel="prerender" href="https://www.sarmmies.bio/dwolla/account-tos">
+        <link rel="preconnect" href="https://www.sarmmies.bio/dwolla/privacy">
+    </head>
+
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.6/pdfobject.min.js" integrity="sha384-mbv0/RdtmUblXg/mZxb03Zct0/tb77G4gGRnsRd3lepTpu7+3ablmHcgdiEOA0/Z" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener("readystatechange", (event) => {
+                if (event.target.readyState === "complete") {
+                    setTimeout(() => {
+                        var theFrame = document.querySelector(
+                            "figure#DWOLLA-ACC-TOS, figure#DWOLLA-PRIVACY > iframe:not(embed, blockquote).pdfobject"
+                        ).firstElementChild;
+                        console.log(theFrame);
+                        var theFrameDocument =
+                            theFrame.contentDocument || theFrame.contentWindow.document;
+                        console.log(theFrameDocument);
+                        var sizerPDF = theFrameDocument.getElementById("sizer");
+                        console.log(sizerPDF);
+                    }, 999);
+                }
+            });
+
+            var PDFoptions = {
+                pdfOpenParams: {
+                    navpanes: 0,
+                    toolbar: 0,
+                    statusbar: 0,
+                    scrollbar: 0,
+                    pagemode: "none",
+                    view: "FitH",
+                    messages: 0,
+                    viewType: "PageView"
+                },
+                forceIframe: true,
+                PDFJS_URL: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"
+            };
+            PDFObject.embed(
+                "https://www.sarmmies.bio/Dwolla%20Account%20Terms%20of%20Service.pdf",
+                document.body.parentElement.querySelector("body:not(head)"),
+                PDFoptions
+            );
+        </script>
+    </body>
+
+</html>
