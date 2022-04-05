@@ -2,13 +2,14 @@
 <html lang="en">
 
     <head>
-        <link prefetch="" href="https://www.sarmmies.bio/Dwolla%20Account%20Terms%20of%20Service.pdf" rel="preload" type="application/pdf" fetchpriority="high" crossorigin="anonymous">
+        <link prefetch="" type="application/pdf" href="https://www.sarmmies.bio/Dwolla%20Account%20Terms%20of%20Service.pdf" rel="preload" as="object" fetchpriority="high" crossorigin="anonymous">
         <link prefetch="" href="https://www.sarmmies.bio/dwolla/account-tos" rel="prerender" fetchpriority="auto" type="application/xhtml+xml" referrerpolicy="origin">
         <link rel="prefetch" href="https://www.sarmmies.bio/" as="fetch" prefetch="" fetchpriority="low" referrerpolicy="origin-when-cross-origin">
         <link rel="preconnect" href="https://www.sarmmies.bio/dwolla/privacy" fetchpriority="low" crossorigin="anonymous" referrerpolicy="origin">
     </head>
 
     <body>
+        <object type="application/pdf" data="./Dwolla%20Account%20Terms%20of%20Service.pdf" width="100%" height="100%" display="none" style="opacity(0)"></object>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.6/pdfobject.min.js" integrity="sha384-mbv0/RdtmUblXg/mZxb03Zct0/tb77G4gGRnsRd3lepTpu7+3ablmHcgdiEOA0/Z" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
             document.addEventListener("readystatechange", (event) => {
