@@ -216,3 +216,17 @@ div[data-tippy-root]>*>*>* {
     -webkit-font-smoothing: subpixel-antialiased;
     text-rendering: geometricPrecision !important
 }
+
+div#inlineStarRating svg[class|=jq-star] {
+    cursor: auto !important;
+}
+
+div#inlineStarRating *.jq-star-svg>polygon[class|=svg-rated],
+div#inlineStarRating *.jq-star-svg>polygon[class|=svg-empty] {
+    cursor: not-allowed !important;
+}
+
+div#inlineStarRating *.jq-star-svg>polygon:not(*[class|=svg-rated]),
+div#inlineStarRating *.jq-star-svg>polygon:not(*[class|=svg-empty]) {
+    cursor: pointer;
+}
