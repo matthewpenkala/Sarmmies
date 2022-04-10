@@ -221,9 +221,12 @@ div#inlineStarRating svg[class|=jq-star] {
     cursor: auto !important;
 }
 
-div#inlineStarRating *.jq-star-svg>polygon[class|=svg-rated],
-div#inlineStarRating *.jq-star-svg>polygon[class|=svg-empty] {
+div#inlineStarRating *.jq-star-svg>polygon[class|=svg-rated] {
     cursor: not-allowed !important;
+}
+
+div#inlineStarRating *.jq-star-svg>polygon[class|=svg-empty] {
+    cursor: default !important;
 }
 
 div#inlineStarRating *.jq-star-svg>polygon:not(*[class|=svg-rated]),
