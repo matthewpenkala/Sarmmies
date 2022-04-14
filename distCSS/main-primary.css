@@ -201,6 +201,11 @@ hr {
     text-shadow: 0 1.5px 3px white
 }
 
+div.w-embed:has(div.cart-quantity[data-wf-bindings]) {
+    display: none !important;
+    opacity: 0 !important;
+}
+
 div[data-tippy-root] {
     filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJzdmc5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxmaWx0ZXIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiIgaWQ9InBzLXNoYXJwZW4iIHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjxmZUNvbnZvbHZlTWF0cml4IG9yZGVyPSIzIDMiIGtlcm5lbE1hdHJpeD0iMCAtMC4xNSAwIC0wLjE1IDEuNiAtMC4xNSAwIC0wLjE1IDAiIGRpdmlzb3I9IjEiIGluPSJTb3VyY2VHcmFwaGljIiB0YXJnZXRYPSIxIiB0YXJnZXRZPSIxIiBpZD0iZmVDb252b2x2ZU1hdHJpeDk5Ij48L2ZlQ29udm9sdmVNYXRyaXg+PC9maWx0ZXI+PC9zdmc+#ps-sharpen)
 }
