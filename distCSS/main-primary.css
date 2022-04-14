@@ -201,7 +201,7 @@ hr {
     text-shadow: 0 1.5px 3px white
 }
 
-div.w-embed:has(div.cart-quantity[data-wf-bindings]) {
+div.w-embed > *.cart-quantity[data-wf-bindings] {
     display: none !important;
     opacity: 0 !important;
 }
